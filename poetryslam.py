@@ -14,4 +14,16 @@ lines_list = get_file_lines(filename)
 # Used for loop in order for function to print reverse enumerated version of poem list
 def lines_printed_backwards(lines_list):
     for line, value in reversed(list(enumerate(lines_list))):
-        print(line, value)
+        print(line, value, end=" ")
+
+# Imported choice function from random module
+
+from random import choice
+
+# Again, using a for loop to print poem list in random order
+# Utilized the len function to indicate the length of the poem for Python to iterate over
+def lines_printed_random(lines_list):
+    for i in range (len(lines_list)):
+        randomline = choice(lines_list)
+        print(randomline, end=" ")
+
