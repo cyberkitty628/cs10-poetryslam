@@ -35,6 +35,6 @@ lines_printed_random(lines_list)
 
 def lines_printed_custom(lines_list):
       for line in lines_list:
-    print("♥", line, sep=" ~ ", end=" ")
+          print("♥", line, sep=" ~ ", end=" ")
 
 lines_printed_custom(lines_list)
