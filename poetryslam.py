@@ -27,7 +27,7 @@ from random import choice
 # Again, using a for loop to print poem list in random order
 # Utilized the len function to indicate the length of the poem for Python to iterate over
 def lines_printed_random(lines_list):
-    for i in range (len(lines_list)):
+    for i in range(len(lines_list)):
         randomline = choice(lines_list)
         print(randomline, end=" ")
 
