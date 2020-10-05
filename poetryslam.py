@@ -7,6 +7,8 @@ def get_file_lines(filename):
     read_lines = infile.readlines()
     return read_lines
 
+print(get_file_lines(filename))
+
 # Assigned prev function as new lines_list variable to retrieve poem list within next function
 
 lines_list = get_file_lines(filename)
@@ -15,6 +17,8 @@ lines_list = get_file_lines(filename)
 def lines_printed_backwards(lines_list):
     for line, value in reversed(list(enumerate(lines_list))):
         print(line, value, end=" ")
+
+lines_printed_backwards(lines_list)
 
 # Imported choice function from random module
 
@@ -27,3 +31,10 @@ def lines_printed_random(lines_list):
         randomline = choice(lines_list)
         print(randomline, end=" ")
 
+lines_printed_random(lines_list)
+
+def lines_printed_custom(lines_list):
+      for line in lines_list:
+    print("♥", line, sep=" ~ ", end=" ")
+
+lines_printed_custom(lines_list)
